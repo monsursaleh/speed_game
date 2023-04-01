@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* base font size is 10px */
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+h1 {
+  margin-top: 5rem;
+  letter-spacing: 2px;
+  font-size: 5rem;
+}
+
+/* Main styles */
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.score {
+  margin: 1rem auto;
+  font-size: 3rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: black;
+  gap: 2rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.game-container button {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border: 2px white solid;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+/* game-container buttton color change when user click the circle  */
+.game-container button:active {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+}
+
+/* inner circle div */
+.circles-container {
+  display: flex;
+  margin: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* inner circle design  */
+.circle {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(255, 15, 15);
+  border: 0.2rem black solid;
+  margin: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4rem;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* active circle cahnge when the random number generate */
+.circle.active {
+  background-color: rgb(51, 13, 239);
+  border: 0.2rem white solid;
+  box-shadow: ;
+}
+
+.circle.active {
+  background-color: rgb(51, 13, 239);
+  border: 0.2rem white solid;
+  box-shadow: 0 0 5px 5px rgb(242, 242, 7);
+}
+
+/* final game score shows in the modal  */
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  width: 50vw;
+  height: 18rem;
+  border-radius: 5px;
+  border: 0.2rem solid black;
+}
+
+/* score end in the modal */
+/* score end in the modal */
+#scoreEnd {
+  margin: 1rem auto;
+  font-size: 3rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* modal clsoe  button  */
+#close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+}
