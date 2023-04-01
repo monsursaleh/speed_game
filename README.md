@@ -6,7 +6,7 @@ The Circle Game is a simple game built using HTML, CSS, and JavaScript. The obje
 
 The code defines several constants and variables, such as the circles, score, speed, and timer, and creates two sound objects for the start and stop of the game.
 
-It has several functions, such as sound, startMusic, stopMusic, rightClick, startGame, stopGame, and closeGame.
+It has several functions, such as a sound, startMusic, stopMusic, rightClick, startGame, stopGame, and closeGame.
 
 The startGame function starts the game by highlighting a random circle and toggling it as active. It also sets a timer that updates the circle highlighting speed and renders the next active circle. The game stops when the user clicks on a wrong circle, or when three rounds are completed.
 
