@@ -37,7 +37,7 @@ The stopGame function stops the game and displays the user's score in a modal, a
 
 ## Setup and usage
 
-Game is up and running [here](https://public.bc.fi/s2300110/speed_game/)
+Game is up and running [here](https://public.bc.fi/s2300110/speed_game/main.html)
 
 ## Lerning Outcome from this project
 
